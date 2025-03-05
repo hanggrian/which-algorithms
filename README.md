@@ -1,2 +1,3 @@
-# which-api
-Common APIs in many programming languages
+# Which code semantics should I use?
+
+Uses [Material](https://github.com/squidfunk/mkdocs-material/) MkDocs theme.
