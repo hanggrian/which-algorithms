@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://hanggrian.github.io/which-semantics/</loc>
+         <lastmod>2025-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-semantics/definitions/classes/</loc>
+         <lastmod>2025-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-semantics/definitions/functions/</loc>
+         <lastmod>2025-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-semantics/definitions/variables/</loc>
+         <lastmod>2025-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-semantics/logic/control_flows/</loc>
+         <lastmod>2025-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-semantics/logic/imports/</loc>
+         <lastmod>2025-03-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-semantics/tricks/slicing/</loc>
+         <lastmod>2025-03-05</lastmod>
+    </url>
+</urlset>
