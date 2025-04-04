@@ -8,7 +8,7 @@
    version="1.1"
    id="svg3"
    sodipodi:docname="favicon.svg"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:version="1.4.1 (93de688d07, 2025-03-30)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,14 +24,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="8.0212426"
-     inkscape:cx="3.6777344"
-     inkscape:cy="16.331634"
-     inkscape:window-width="1330"
-     inkscape:window-height="801"
-     inkscape:window-x="26"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
+     inkscape:zoom="9.2167969"
+     inkscape:cx="5.8588684"
+     inkscape:cy="22.784488"
+     inkscape:window-width="2560"
+     inkscape:window-height="1403"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg3">
     <inkscape:page
        x="0"
@@ -41,57 +41,27 @@
        id="page4"
        margin="0"
        bleed="0" />
-    <inkscape:page
-       x="24.815428"
-       y="0.088154256"
-       width="20"
-       height="18"
-       id="page5"
-       margin="0"
-       bleed="0" />
   </sodipodi:namedview>
   <path
      d="M 20,8 V 0 H 13.000001 V 3 H 7.0000005 V 0 h -7 v 8 h 7 V 5 h 2 v 10 h 4.0000005 v 3 H 20 v -8 h -6.999999 v 3 h -2 V 5 h 2 V 8 Z M 5.0000005,6 h -3 V 2 h 3 z M 15.000001,12 H 18 v 4 h -2.999999 z m 0,-10 H 18 v 4 h -2.999999 z"
      id="path1"
-     style="fill:#c2e7fd;fill-opacity:1" />
+     style="fill:#8bc34b;fill-opacity:1" />
   <polyline
      opacity="0.3"
      points="7,5 7,9 4,9 4,5 7,5"
      id="polyline1"
      transform="translate(-1.9999995,-3)"
-     style="opacity:1;fill:#011d32;fill-opacity:1" />
+     style="opacity:1;fill:#4051b5;fill-opacity:1" />
   <polyline
      opacity="0.3"
      points="20,5 20,9 17,9 17,5 20,5"
      id="polyline2"
      transform="translate(-1.9999995,-3)"
-     style="opacity:1;fill:#011d32;fill-opacity:1" />
+     style="opacity:1;fill:#4051b5;fill-opacity:1" />
   <polyline
      opacity="0.3"
      points="20,15 20,19 17,19 17,15 20,15"
      id="polyline3"
      transform="translate(-1.9999995,-3)"
-     style="opacity:1;fill:#011d32;fill-opacity:1" />
-  <path
-     d="m 44.815428,8.0881543 v -8 h -7 v 3 h -6 v -3 h -7 v 8 h 7 v -3 h 2 v 9.9999997 h 4 v 3 h 7 v -8 h -7 v 3 h -2 V 5.0881543 h 2 v 3 z m -15,-2 h -3 v -4 h 3 z m 10,5.9999997 h 3 v 4 h -3 z m 0,-9.9999997 h 3 v 4 h -3 z"
-     id="path1-6"
-     style="fill:#011d32;fill-opacity:1" />
-  <polyline
-     opacity="0.3"
-     points="7,5 7,9 4,9 4,5 7,5"
-     id="polyline1-2"
-     transform="translate(22.815428,-2.9118457)"
-     style="opacity:1;fill:#c2e7fd;fill-opacity:1" />
-  <polyline
-     opacity="0.3"
-     points="20,5 20,9 17,9 17,5 20,5"
-     id="polyline2-9"
-     transform="translate(22.815428,-2.9118457)"
-     style="opacity:1;fill:#c2e7fd;fill-opacity:1" />
-  <polyline
-     opacity="0.3"
-     points="20,15 20,19 17,19 17,15 20,15"
-     id="polyline3-1"
-     transform="translate(22.815428,-2.9118457)"
-     style="opacity:1;fill:#c2e7fd;fill-opacity:1" />
+     style="opacity:1;fill:#4051b5;fill-opacity:1" />
 </svg>
