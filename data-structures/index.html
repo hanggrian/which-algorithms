@@ -12,14 +12,16 @@
         <meta name="author" content="Hendra Anggrian">
       
       
-        <link rel="canonical" href="https://hanggrian.github.io/which-algorithms/">
+        <link rel="canonical" href="https://hanggrian.github.io/which-algorithms/data-structures/">
       
       
+        <link rel="prev" href="../two-pointers/">
       
-        <link rel="next" href="two-pointers/">
+      
+        <link rel="next" href="lists/">
       
       
-      <link rel="icon" href="images/favicon.ico">
+      <link rel="icon" href="../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
@@ -28,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#which-algorithms-should-i-use" class="md-skip">
+        <a href="#performance-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Which algorithms" class="md-header__button md-logo" aria-label="Which algorithms" data-md-component="logo">
+    <a href=".." title="Which algorithms" class="md-header__button md-logo" aria-label="Which algorithms" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -222,13 +224,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
           
   
   
@@ -244,11 +244,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="data-structures/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -268,7 +270,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="sorting/" class="md-tabs__link">
+        <a href="../sorting/" class="md-tabs__link">
           
   
   
@@ -288,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="searching/" class="md-tabs__link">
+        <a href="../searching/" class="md-tabs__link">
           
   
   
@@ -330,7 +332,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Which algorithms" class="md-nav__button md-logo" aria-label="Which algorithms" data-md-component="logo">
+    <a href=".." title="Which algorithms" class="md-nav__button md-logo" aria-label="Which algorithms" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -357,31 +359,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -394,7 +393,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Algorithms
@@ -405,19 +404,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -428,7 +418,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -441,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="two-pointers/" class="md-nav__link">
+      <a href="../two-pointers/" class="md-nav__link">
         
   
   
@@ -468,28 +457,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -502,7 +494,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Data structures
@@ -513,10 +505,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="data-structures/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -527,6 +539,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#performance-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance overview
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -539,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-structures/lists/" class="md-nav__link">
+      <a href="lists/" class="md-nav__link">
         
   
   
@@ -562,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-structures/queues/" class="md-nav__link">
+      <a href="queues/" class="md-nav__link">
         
   
   
@@ -585,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-structures/sets/" class="md-nav__link">
+      <a href="sets/" class="md-nav__link">
         
   
   
@@ -608,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-structures/maps/" class="md-nav__link">
+      <a href="maps/" class="md-nav__link">
         
   
   
@@ -683,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sorting/" class="md-nav__link">
+      <a href="../sorting/" class="md-nav__link">
         
   
   
@@ -758,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="searching/" class="md-nav__link">
+      <a href="../searching/" class="md-nav__link">
         
   
   
@@ -800,23 +839,82 @@
   
 
 
-<h1 id="which-algorithms-should-i-use">Which algorithms should I use?<a class="headerlink" href="#which-algorithms-should-i-use" title="Permanent link">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A work in progress, check back later for more content.</p>
-</div>
-<p>Personal note of programming algorithms and data structures.</p>
+  <h1>Index</h1>
+
 <div class="grid cards">
 <ul>
 <li>
-<p><strong>Two pointers</strong></p>
+<p><strong>Lists</strong></p>
 <hr />
-<p>Sliding window and fast-slow pointers.</p>
-<p><span class="twemoji xxxl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 5a7 7 0 0 0-7 7 7 7 0 0 0 7 7c1.04 0 2.06-.24 3-.68.94.44 1.96.68 3 .68a7 7 0 0 0 7-7 7 7 0 0 0-7-7c-1.04 0-2.06.24-3 .68-.94-.44-1.96-.68-3-.68m0 2c.34 0 .67.03 1 .1-1.28 1.31-2 3.07-2 4.9s.72 3.59 2 4.89c-.33.07-.66.11-1 .11a5 5 0 0 1-5-5 5 5 0 0 1 5-5m6 0a5 5 0 0 1 5 5 5 5 0 0 1-5 5c-.34 0-.67-.03-1-.1 1.28-1.31 2-3.07 2-4.9s-.72-3.59-2-4.89c.33-.07.66-.11 1-.11"/></svg></span></p>
-<p><a href="two-pointers#sliding-window"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Sliding window</a>&emsp;<a href="two-pointers#fast-slow-pointers"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Fast-slow pointers</a></p>
+<p><span class="twemoji xxxl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 5h14v2H7zm0 8v-2h14v2zM4 4.5A1.5 1.5 0 0 1 5.5 6 1.5 1.5 0 0 1 4 7.5 1.5 1.5 0 0 1 2.5 6 1.5 1.5 0 0 1 4 4.5m0 6A1.5 1.5 0 0 1 5.5 12 1.5 1.5 0 0 1 4 13.5 1.5 1.5 0 0 1 2.5 12 1.5 1.5 0 0 1 4 10.5M7 19v-2h14v2zm-3-2.5A1.5 1.5 0 0 1 5.5 18 1.5 1.5 0 0 1 4 19.5 1.5 1.5 0 0 1 2.5 18 1.5 1.5 0 0 1 4 16.5"/></svg></span></p>
+<p>Array, list or any indexed collection of elements.</p>
+<p><a href="lists#java"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Java</a>&emsp;<a href="lists#python"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Python</a></p>
+</li>
+<li>
+<p><strong>Queues</strong></p>
+<hr />
+<p><span class="twemoji xxxl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 5H6v2h12M6 9h12v2H6m-4 1h2v5h16v-5h2v5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2m16-4H6v2h12Z"/></svg></span></p>
+<p>Queue, stack or any FIFO or LIFO collection of elements.</p>
+<p><a href="queues#java"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Java</a>&emsp;<a href="queues#python"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Python</a></p>
+</li>
+<li>
+<p><strong>Sets</strong></p>
+<hr />
+<p><span class="twemoji xxxl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2zM4 14h4v-4H4zm6 0h4v-4h-4zm6 0h4v-4h-4z"/></svg></span></p>
+<p>Set or any collection of unique elements.</p>
+<p><a href="sets#java"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Java</a>&emsp;<a href="sets#python"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Python</a></p>
+</li>
+<li>
+<p><strong>Maps</strong></p>
+<hr />
+<p><span class="twemoji xxxl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m0 4v3h4V7zm6 0v3h4V7zm10 3V7h-4v3zM4 12v3h4v-3zm0 8h4v-3H4zm6-8v3h4v-3zm0 8h4v-3h-4zm10 0v-3h-4v3zm0-8h-4v3h4z"/></svg></span></p>
+<p>Map, dictionary or any collection of key-value pairs.</p>
+<p><a href="maps#java"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Java</a>&emsp;<a href="maps#python"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span> Python</a></p>
 </li>
 </ul>
 </div>
+<h3 id="performance-overview">Performance overview<a class="headerlink" href="#performance-overview" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Data structure</th>
+<th style="text-align: center;">Access</th>
+<th style="text-align: center;">Search</th>
+<th style="text-align: center;">Insert</th>
+<th style="text-align: center;">Delete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lists</td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {O(1)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {Θ(n)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {Θ(n)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {Θ(n)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+</tr>
+<tr>
+<td>Queues</td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {Θ(n)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {Θ(n)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {O(1)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {O(1)}\)</span></td>
+</tr>
+<tr>
+<td>Sets</td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {Θ(n)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {Θ(n)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {O(1)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {O(1)}\)</span></td>
+</tr>
+<tr>
+<td>Maps</td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {O(1)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\color{white} \fcolorbox{limegreen}{forestgreen} {Θ(1)}\)</span> &rarr; <span class="arithmatex">\(\color{black} \fcolorbox{gold}{yellow} {O(n)}\)</span></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -871,10 +969,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.suggest", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.suggest", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
