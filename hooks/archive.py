@@ -55,7 +55,7 @@ def on_post_build(config: MkDocsConfig):
         ])
 
     # Create archives for each example
-    for file in iglob("which-api/*/mkdocs.yml", recursive = True):
+    for file in iglob("which-algorithms/*/mkdocs.yml", recursive = True):
         base = os.path.dirname(file)
 
         # Compute archive name and path
@@ -82,4 +82,4 @@ def on_post_build(config: MkDocsConfig):
 # -----------------------------------------------------------------------------
 
 # Set up logging
-log = logging.getLogger("mkdocs.material.which-api")
+log = logging.getLogger("mkdocs.material.which-algorithms")

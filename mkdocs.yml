@@ -1,27 +1,28 @@
-site_name: Which semantics
-site_url: https://hanggrian.github.io/which-semantics/
+site_name: Which algorithms
+site_url: https://hanggrian.github.io/which-algorithms/
 site_author: Hendra Anggrian
-site_description: >-
-  Common code implementation in many programming languages
+site_description: Personal note of programming algorithms and data structures
 
-repo_name: hanggrian/which-semantics
-repo_url: https://github.com/hanggrian/which-semantics
+repo_name: hanggrian/which-algorithms
+repo_url: https://github.com/hanggrian/which-algorithms
 
 copyright: <a href="https://hanggrian.github.io">About me</a>
 
 theme:
   name: material
-  favicon: assets/favicon.ico
+  favicon: images/favicon.ico
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: c2e7fd
+      primary: green
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: 011d32
+      primary: light green
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -36,9 +37,30 @@ theme:
     - search.share
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
+    - toc.follow
+    - toc.integrate
+
+nav:
+  - Algorithms:
+    - Index: index.md
+    - Two pointers: two-pointers.md
+  - Data structures:
+    - Index: data-structures/index.md
+    - Lists: data-structures/lists.md
+    - Queues: data-structures/queues.md
+    - Sets: data-structures/sets.md
+    - Maps: data-structures/maps.md
+  - Sorting:
+    - Index: sorting/index.md
+  - Searching:
+    - Index: searching/index.md
 
 plugins:
   - search
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 hooks:
   - hooks/archive.py
@@ -71,10 +93,8 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - attr_list
   - md_in_html
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
