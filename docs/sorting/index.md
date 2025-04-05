@@ -1,52 +1,73 @@
+# Sorting
+
+!!! quote
+    &ldquo;There's more than one way to do it.&rdquo;
+    &mdash; *Lary Wall*
+
 <div class="grid cards" markdown>
--   **Selection sort** [:material-information-outline:][selection_sort]
+-   **Selection sort** [:material-information-variant:][selection-sort]
 
     ---
 
-    :material-land-rows-horizontal:{ .xxxl }
+    [:material-view-sequential-outline:{ .xxxl }](selection-sort.md)
 
-    Easy to implement but performs the worst of them all.
+    Selection sort is an in-place comparison sorting algorithm.
 
--   **Bubble sort** [:material-information-outline:][bubble_sort]
+    [:material-arrow-right: Use cases](selection-sort.md#use-cases)
 
-    ---
-
-    :material-swap-horizontal:{ .xxxl }
-
-    Bubble sort or sinking sort, is better than selection sort but more complex
-    than insertion sort.
-
--   **Insertion sort** [:material-information-outline:][insertion_sort]
+-   **Bubble sort** [:material-information-variant:][selection-sort]
 
     ---
 
-    :material-cards-outline:{ .xxxl }
+    [:material-swap-horizontal-bold:{ .xxxl }](bubble-sort.md)
 
-    Simple to implement and sufficient for smaller data sets.
+    Repeatedly steps through the input list element by element, comparing the
+    current element with the one after it, swapping their values if needed.
 
--   **Merge sort** [:material-information-outline:][merge_sort]
+    :material-arrow-right: Use cases
 
-    ---
-
-    :material-source-merge:{ .xxxl }
-
-    Efficiently sorts large data sets with divide and conquer.
-
--   **Quicksort** [:material-information-outline:][quicksort]
+-   **Insertion sort** [:material-information-variant:][insertion-sort]
 
     ---
 
-    :material-graph-outline:{ .xxxl }
+    [:material-cards-outline:{ .xxxl }](insertion-sort.md)
 
-    Expands on merge sort with a pivot to reduce the number of comparisons.
+    Builds the final sorted array (or list) one item at a time by comparisons.
 
--    **Heapsort** [:material-information-outline:][heapsort]
+    :material-arrow-right: Use cases
+
+-   **Merge sort** [:material-information-variant:][merge-sort]
 
     ---
 
-    :material-family-tree:{ .xxxl }
+    [:material-source-merge:{ .xxxl }](merge-sort.md)
 
-    Reorganizes the data into a heap structure to sort it.
+    Efficient, general-purpose, and comparison-based sorting algorithm.
+
+    :material-arrow-right: Use cases
+
+-   **Quicksort** [:material-information-variant:][quicksort]
+
+    ---
+
+    [:material-graph-outline:{ .xxxl }](quicksort.md)
+
+    Slightly faster than merge sort and heapsort for randomized data,
+    particularly on larger distributions.
+
+    :material-arrow-right: Use cases
+
+-    **Heapsort** [:material-information-variant:][heapsort]
+
+    ---
+
+    [:material-family-tree:{ .xxxl }](heapsort.md)
+
+    Reorganizes an input array into a heap (a data structure where each node
+    is greater than its children) and then repeatedly removes the largest
+    node from that heap, placing it at the end of the array.
+
+    :material-arrow-right: Use cases
 </div>
 
 ### Performance overview
@@ -60,9 +81,9 @@ Merge sort | $\color{black} \fcolorbox{darkorange}{sandybrown} {Ω(n . log(n))}$
 Quicksort | $\color{black} \fcolorbox{darkorange}{sandybrown} {Ω(n . log(n))}$ &rarr; $\color{black} \fcolorbox{darkorange}{sandybrown} {Θ(n . log(n))}$ &rarr; $\color{white} \fcolorbox{crimson}{firebrick} {O(n^2)}$ | $\color{black} \fcolorbox{yellowgreen}{greenyellow} {O(log(n))}$
 Heapsort | $\color{black} \fcolorbox{darkorange}{sandybrown} {Ω(n . log(n))}$ &rarr; $\color{black} \fcolorbox{darkorange}{sandybrown} {Θ(n . log(n))}$ &rarr; $\color{black} \fcolorbox{darkorange}{sandybrown} {O(n . log(n))}$ | $\color{white} \fcolorbox{limegreen}{forestgreen} {O(1)}$
 
-[bubble_sort]: https://en.wikipedia.org/wiki/Bubble_sort "Bubble sort"
-[heapsort]: https://en.wikipedia.org/wiki/Heapsort "Heapsort"
-[insertion_sort]: https://en.wikipedia.org/wiki/Insertion_sort "Insertion sort"
-[merge_sort]: https://en.wikipedia.org/wiki/Merge_sort "Merge sort"
-[selection_sort]: https://en.wikipedia.org/wiki/Selection_sort "Selection sort"
-[quicksort]: https://en.wikipedia.org/wiki/Quicksort "Quicksort"
+[bubble-sort]: https://en.wikipedia.org/wiki/bit-array "Wikipedia: Bubble sort"
+[heapsort]: https://en.wikipedia.org/wiki/Heapsort "Wikipedia: Heapsort"
+[insertion-sort]: https://en.wikipedia.org/wiki/Insertion_sort "Wikipedia: Insertion sort"
+[merge-sort]: https://en.wikipedia.org/wiki/Merge_sort "Wikipedia: Merge sort"
+[selection-sort]: https://en.wikipedia.org/wiki/Selection_sort "Wikipedia: Selection sort"
+[quicksort]: https://en.wikipedia.org/wiki/Quicksort "Wikipedia: Quicksort"

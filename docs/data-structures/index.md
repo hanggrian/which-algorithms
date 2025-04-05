@@ -1,43 +1,50 @@
+# Data structures
+
+!!! quote
+    &ldquo;**Bad programmers** worry about the code. **Good programmers** worry
+    about data structures and their relationships.&rdquo;
+    &mdash; *Linus Torvalds*
+
 <div class="grid cards" markdown>
 -   **Lists**
 
     ---
 
-    :material-format-list-bulleted:{ .xxxl }
+    [:material-format-list-bulleted:{ .xxxl }](lists.md)
 
     Array, list or any indexed collection of elements.
 
-    [:material-arrow-right: Java](lists#java)&emsp;[:material-arrow-right: Python](lists#python)
+    [:material-arrow-right: Which one to use?](lists.md#which-one-to-use)
 
 -   **Queues**
 
     ---
 
-    :material-tray-full:{ .xxxl }
+    [:material-tray-full:{ .xxxl }](queues.md)
 
     Queue, stack or any FIFO or LIFO collection of elements.
 
-    [:material-arrow-right: Java](queues#java)&emsp;[:material-arrow-right: Python](queues#python)
+    [:material-arrow-right: Which one to use?](queues.md#which-one-to-use)
 
 -   **Sets**
 
     ---
 
-    :material-table-row:{ .xxxl }
+    [:material-table-row:{ .xxxl }](sets.md)
 
     Set or any collection of unique elements.
 
-    [:material-arrow-right: Java](sets#java)&emsp;[:material-arrow-right: Python](sets#python)
+    [:material-arrow-right: Which one to use?](sets.md#which-one-to-use)
 
 -   **Maps**
 
     ---
 
-    :material-table-large:{ .xxxl }
+    [:material-table-large:{ .xxxl }](maps.md)
 
     Map, dictionary or any collection of key-value pairs.
 
-    [:material-arrow-right: Java](maps#java)&emsp;[:material-arrow-right: Python](maps#python)
+    [:material-arrow-right: Which one to use?](maps.md#which-one-to-use)
 </div>
 
 ### Performance overview

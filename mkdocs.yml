@@ -11,6 +11,7 @@ copyright: <a href="https://hanggrian.github.io">About me</a>
 theme:
   name: material
   favicon: images/favicon.ico
+  logo: images/icon.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -45,16 +46,30 @@ nav:
   - Algorithms:
     - Index: index.md
     - Two pointers: two-pointers.md
+    - Recursion: recursion.md
+    - Dynamic programming: dynamic-programming.md
+    - Greedy: greedy.md
+  - Searching:
+    - Index: searching/index.md
+    - Linear search: searching/linear-search.md
+    - Binary search: searching/binary-search.md
+    - Breadth-first search: searching/breadth-first-search.md
+    - Depth-first search: searching/depth-first-search.md
+  - Sorting:
+    - Index: sorting/index.md
+    - Selection sort: sorting/selection-sort.md
+    - Bubble sort: sorting/bubble-sort.md
+    - Insertion sort: sorting/insertion-sort.md
+    - Merge sort: sorting/merge-sort.md
+    - Quicksort: sorting/quicksort.md
+    - Heapsort: sorting/heapsort.md
   - Data structures:
     - Index: data-structures/index.md
     - Lists: data-structures/lists.md
     - Queues: data-structures/queues.md
     - Sets: data-structures/sets.md
     - Maps: data-structures/maps.md
-  - Sorting:
-    - Index: sorting/index.md
-  - Searching:
-    - Index: searching/index.md
+  - References: references.md
 
 plugins:
   - search
@@ -93,8 +108,13 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - attr_list
   - md_in_html
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.arithmatex:
       generic: true
+  - def_list

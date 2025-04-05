@@ -1,3 +1,9 @@
+!!! quote inline end
+    &ldquo;Algorithmic complexity for structured programmers: **All algorithms
+    are $\boldsymbol{O(f(n))}$, where $\boldsymbol{f}$ is someone else's
+    responsibility.**&rdquo;
+    &mdash; *Peter Cooper*
+
 Make use of two pointers to solve problems that require traversing a sequence of elements.
 
 Common problems:
@@ -17,7 +23,7 @@ Common problems:
                 }
             }
         }
-        return null
+        return []
     }
     ```
 === "Java"
@@ -43,6 +49,19 @@ Common problems:
         }
       }
       return undefined;
+    }
+    ```
+=== "Kotlin"
+    ```kotlin
+    fun twoSum(nums: IntArray, target: Int): IntArray {
+        for (i in nums.indices) {
+            for (j in i + 1 until nums.size) {
+                if (nums[j] == target - nums[i]) {
+                    return intArrayOf(i, j)
+                }
+            }
+        }
+        return intArrayOf()
     }
     ```
 === "Python"
@@ -84,9 +103,6 @@ Common problems:
 === "Groovy"
     ```groovy
     int lengthOfLongestSubstring(String s) {
-        if (s.isEmpty()) {
-            return 0
-        }
         HashSet<Character> characters = []
         var start = 0
         var end = 0
@@ -106,18 +122,18 @@ Common problems:
 === "Java"
     ```java
     int lengthOfLongestSubstring(String s) {
-        int i = 0;
-        int j = 0;
+        Set<Character> characters = new HashSet<>();
+        int start = 0;
+        int end = 0;
         int maxLength = Integer.MIN_VALUE;
-        Set<Character> set = new HashSet<>();
-        while (j < s.length()) {
-            if (set.add(s.charAt(j))) {
-                maxLength = Math.max(maxLength, set.size());
-                j++;
-            } else {
-                set.remove(s.charAt(i));
-                i++;
+        while (end < s.length()) {
+            if (characters.add(s.charAt(end))) {
+                maxLength = Math.max(maxLength, characters.size());
+                end++;
+                continue;
             }
+            characters.remove(s.charAt(start));
+            start++;
         }
         return maxLength;
     }
@@ -125,9 +141,6 @@ Common problems:
 === "JavaScript"
     ```javascript
     function lengthOfLongestSubstring(s) {
-        if (!s) {
-          return 0;
-        }
         const characters = new Set();
         let start = 0;
         let end = 0;
@@ -145,29 +158,44 @@ Common problems:
         return maxLength;
       }
     ```
+=== "Kotlin"
+    ```kotlin
+    fun lengthOfLongestSubstring(s: String): Int {
+        val characters = hashSetOf<Char>()
+        var start = 0
+        var end = 0
+        var maxLength = Int.MIN_VALUE
+        while (end < s.length) {
+            if (characters.add(s[end])) {
+                maxLength = max(maxLength, characters.size)
+                end++
+                continue
+            }
+            characters -= s[start]
+            start++
+        }
+        return maxLength
+    }
+    ```
 === "Python"
     ```python
     def length_of_longest_substring(self, s: str) -> int:
-        i = 0
-        j = 0
-        max_length = sys.maxsize
-        char_set = set()
-        while j < len(s):
-            if s[j] not in char_set:
-                char_set.add(s[j])
-                max_length = max(max_length, len(char_set))
-                j += 1
-            else:
-                char_set.remove(s[i])
-                i += 1
-        return max_length
+        characters = set()
+        start = 0
+        end = 0
+        max_length = -maxsize
+        while end < len(s):
+            if s[end] not in characters:
+                characters.add(s[end])
+                end += 1
+                max_length = max(max_length, len(characters))
+                continue
+            characters.remove(s[start])
+            start += 1
     ```
 === "TypeScript"
     ```typescript
     function lengthOfLongestSubstring(s: string): number {
-        if (!s) {
-          return 0;
-        }
         const characters = new Set<string>();
         let start = 0;
         let end = 0;
@@ -203,25 +231,21 @@ Common problems:
 === "Groovy"
     ```groovy
     boolean hasCycle(SinglyListNode head) {
-        // visited nodes
-        Set<SinglyListNode> visits = []
-        for (var node : head) {
-            if (!visits.add(node)) {
-                return true
-            }
+        var slow = head.next
+        var fast = head.next.next
+        while (fast != null && fast.hasNext() && slow != fast) {
+            slow = slow.next
+            fast = fast.next.next
         }
-        return false
+        return slow == fast
     }
     ```
 === "Java"
     ```java
     boolean hasCycle(ListNode head) {
-        if (head == null || head.next == null) {
-            return false;
-        }
-        ListNode slow = head.next;
-        ListNode fast = head.next.next;
-        while (fast != null && fast.next != null && slow != fast) {
+        SinglyListNode slow = head.next;
+        SinglyListNode fast = head.next.next;
+        while (fast != null && fast.hasNext() && slow != fast) {
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -231,22 +255,33 @@ Common problems:
 === "JavaScript"
     ```javascript
     function hasCycle(head) {
-      // visited nodes
-      const visits = new Set();
-      for (const node of head) {
-        if (visits.has(node)) {
-          return true;
-        }
-        visits.add(node);
+      let slow = head.next;
+      let fast = head.next.next;
+      while (fast && fast.hasNext() && slow !== fast) {
+        slow = slow.next;
+        fast = fast.next.next;
       }
-      return false;
+      return slow === fast;
+    }
+    ```
+=== "Kotlin"
+    ```kotlin
+    fun hasCycle(head: SinglyListNode?): Boolean {
+        if (head?.next == null) {
+            return false
+        }
+        var slow = head.next
+        var fast = head.next!!.next
+        while (fast != null && fast.hasNext() && slow !== fast) {
+            slow = slow!!.next
+            fast = fast.next!!.next
+        }
+        return slow === fast
     }
     ```
 === "Python"
     ```python
     def has_cycle(self, head: ListNode) -> bool:
-        if not head or not head.next:
-            return False
         slow = head.next
         fast = head.next.next
         while fast and fast.next and slow != fast:
@@ -257,18 +292,22 @@ Common problems:
 === "TypeScript"
     ```typescript
     function hasCycle(head: SinglyListNode | undefined): boolean {
-      // visited nodes
-      const visits = new Set<SinglyListNode>();
-      for (const node of head) {
-        if (visits.has(node)) {
-          return true;
-        }
-        visits.add(node);
+      let slow = head.next;
+      let fast = head.next.next;
+      while (fast && fast.hasNext() && slow !== fast) {
+        slow = slow.next;
+        fast = fast.next.next;
       }
-      return false;
+      return slow === fast;
     }
     ```
 
 ![](images/two-pointers-fast-slow-pointers.gif)
 </div>
 
+## Problem characteristics
+
+<div class="grid cards" markdown>
+- :material-minus:{ .lg .middle } The data structure is linear
+- :material-pan-horizontal:{ .lg .middle } The task is to find more than one element
+</div>
