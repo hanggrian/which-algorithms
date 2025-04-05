@@ -2,38 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/dynamic-programming/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/greedy/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/recursion/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/references/</loc>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/two-pointers/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/data-structures/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/data-structures/lists/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/data-structures/maps/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/data-structures/queues/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/data-structures/sets/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/searching/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/searching/binary-search/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/searching/breadth-first-search/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/searching/depth-first-search/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/searching/linear-search/</loc>
+         <lastmod>2025-04-05</lastmod>
     </url>
     <url>
          <loc>https://hanggrian.github.io/which-algorithms/sorting/</loc>
-         <lastmod>2025-04-04</lastmod>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/sorting/bubble-sort/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/sorting/heapsort/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/sorting/insertion-sort/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/sorting/merge-sort/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/sorting/quicksort/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://hanggrian.github.io/which-algorithms/sorting/selection-sort/</loc>
+         <lastmod>2025-04-05</lastmod>
     </url>
 </urlset>

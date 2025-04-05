@@ -12,22 +12,28 @@
         <meta name="author" content="Hendra Anggrian">
       
       
+        <link rel="canonical" href="https://hanggrian.github.io/which-algorithms/dynamic-programming/">
       
       
+        <link rel="prev" href="../recursion/">
       
-      <link rel="icon" href="/which-algorithms/images/favicon.ico">
+      
+        <link rel="next" href="../greedy/">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Which algorithms</title>
+        <title>Dynamic programming - Which algorithms</title>
       
     
     
-      <link rel="stylesheet" href="/which-algorithms/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/which-algorithms/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/which-algorithms/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -83,9 +89,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/which-algorithms/." title="Which algorithms" class="md-header__button md-logo" aria-label="Which algorithms" data-md-component="logo">
+    <a href=".." title="Which algorithms" class="md-header__button md-logo" aria-label="Which algorithms" data-md-component="logo">
       
-  <img src="/which-algorithms/images/icon.svg" alt="logo">
+  <img src="../images/icon.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Dynamic programming
             
           </span>
         </div>
@@ -212,11 +218,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/which-algorithms/." class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
           
   
   
@@ -236,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/which-algorithms/searching/" class="md-tabs__link">
+        <a href="../searching/" class="md-tabs__link">
           
   
   
@@ -256,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/which-algorithms/sorting/" class="md-tabs__link">
+        <a href="../sorting/" class="md-tabs__link">
           
   
   
@@ -276,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/which-algorithms/data-structures/" class="md-tabs__link">
+        <a href="../data-structures/" class="md-tabs__link">
           
   
   
@@ -294,7 +302,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/which-algorithms/references/" class="md-tabs__link">
+      <a href="../references/" class="md-tabs__link">
         
   
   
@@ -337,9 +345,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/which-algorithms/." title="Which algorithms" class="md-nav__button md-logo" aria-label="Which algorithms" data-md-component="logo">
+    <a href=".." title="Which algorithms" class="md-nav__button md-logo" aria-label="Which algorithms" data-md-component="logo">
       
-  <img src="/which-algorithms/images/icon.svg" alt="logo">
+  <img src="../images/icon.svg" alt="logo">
 
     </a>
     Which algorithms
@@ -363,28 +371,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -397,7 +408,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Algorithms
@@ -411,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -434,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/two-pointers/" class="md-nav__link">
+      <a href="../two-pointers/" class="md-nav__link">
         
   
   
@@ -457,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/recursion/" class="md-nav__link">
+      <a href="../recursion/" class="md-nav__link">
         
   
   
@@ -477,10 +488,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/which-algorithms/dynamic-programming/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -491,6 +509,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -503,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/greedy/" class="md-nav__link">
+      <a href="../greedy/" class="md-nav__link">
         
   
   
@@ -578,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/searching/" class="md-nav__link">
+      <a href="../searching/" class="md-nav__link">
         
   
   
@@ -601,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/searching/linear-search/" class="md-nav__link">
+      <a href="../searching/linear-search/" class="md-nav__link">
         
   
   
@@ -624,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/searching/binary-search/" class="md-nav__link">
+      <a href="../searching/binary-search/" class="md-nav__link">
         
   
   
@@ -647,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/searching/breadth-first-search/" class="md-nav__link">
+      <a href="../searching/breadth-first-search/" class="md-nav__link">
         
   
   
@@ -670,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/searching/depth-first-search/" class="md-nav__link">
+      <a href="../searching/depth-first-search/" class="md-nav__link">
         
   
   
@@ -745,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/sorting/" class="md-nav__link">
+      <a href="../sorting/" class="md-nav__link">
         
   
   
@@ -768,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/sorting/selection-sort/" class="md-nav__link">
+      <a href="../sorting/selection-sort/" class="md-nav__link">
         
   
   
@@ -791,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/sorting/bubble-sort/" class="md-nav__link">
+      <a href="../sorting/bubble-sort/" class="md-nav__link">
         
   
   
@@ -814,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/sorting/insertion-sort/" class="md-nav__link">
+      <a href="../sorting/insertion-sort/" class="md-nav__link">
         
   
   
@@ -837,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/sorting/merge-sort/" class="md-nav__link">
+      <a href="../sorting/merge-sort/" class="md-nav__link">
         
   
   
@@ -860,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/sorting/quicksort/" class="md-nav__link">
+      <a href="../sorting/quicksort/" class="md-nav__link">
         
   
   
@@ -883,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/sorting/heapsort/" class="md-nav__link">
+      <a href="../sorting/heapsort/" class="md-nav__link">
         
   
   
@@ -958,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/data-structures/" class="md-nav__link">
+      <a href="../data-structures/" class="md-nav__link">
         
   
   
@@ -981,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/data-structures/lists/" class="md-nav__link">
+      <a href="../data-structures/lists/" class="md-nav__link">
         
   
   
@@ -1004,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/data-structures/queues/" class="md-nav__link">
+      <a href="../data-structures/queues/" class="md-nav__link">
         
   
   
@@ -1027,7 +1046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/data-structures/sets/" class="md-nav__link">
+      <a href="../data-structures/sets/" class="md-nav__link">
         
   
   
@@ -1050,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/data-structures/maps/" class="md-nav__link">
+      <a href="../data-structures/maps/" class="md-nav__link">
         
   
   
@@ -1080,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/which-algorithms/references/" class="md-nav__link">
+      <a href="../references/" class="md-nav__link">
         
   
   
@@ -1107,8 +1126,38 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+  <h1>Dynamic programming</h1>
+
+<div class="admonition quote inline end">
+<p class="admonition-title">Quote</p>
+<p>&ldquo;There are only two hard things in Computer Science: <strong>cache
+invalidation and naming things.</strong>&rdquo;
+&mdash; <em>Phil Karlton</em></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A work in progress, check back later for more content.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1150,10 +1199,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/which-algorithms/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.suggest", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips", "toc.follow", "toc.integrate"], "search": "/which-algorithms/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "search.suggest", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/which-algorithms/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
