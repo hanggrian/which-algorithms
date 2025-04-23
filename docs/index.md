@@ -1,9 +1,9 @@
 # Which algorithms should I use?
 
-!!! quote
-    &ldquo;If you're thinking without writing, you only think you're
-    thinking.&rdquo;
-    &mdash; *Leslie Lamport*
+<img
+  width="640"
+  src="images/home.jpg"
+  alt="I see what you're saying. And I believe, that you believe it's important.">
 
 Personal note of programming algorithms and data structures.
 

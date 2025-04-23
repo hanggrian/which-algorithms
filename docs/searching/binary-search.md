@@ -112,7 +112,7 @@ array into two halves.
     }
     ```
 
-![](../images/binary-search.gif)
+![](../images/searching/binary_search.gif)
 </div>
 
 ## Use cases

@@ -103,7 +103,7 @@ Selection sort is easy to implement but performs the worst of them all.
     }
     ```
 
-![](../images/selection-sort.gif)
+![](../images/sorting/selection_sort.gif)
 </div>
 
 ## Use cases

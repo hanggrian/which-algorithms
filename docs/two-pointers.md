@@ -86,7 +86,7 @@ Common problems:
     }
     ```
 
-![](images/two-pointers.gif)
+![](images/algorithms/two_pointers.gif)
 </div>
 
 ## Sliding window
@@ -214,7 +214,7 @@ Common problems:
       }
     ```
 
-![](images/two-pointers-sliding-window.gif)
+![](images/algorithms/two_pointers-sliding_window.gif)
 </div>
 
 ## Fast-slow pointers
@@ -302,7 +302,7 @@ Common problems:
     }
     ```
 
-![](images/two-pointers-fast-slow-pointers.gif)
+![](images/algorithms/two_pointers-fast_slow_pointers.gif)
 </div>
 
 ## Problem characteristics

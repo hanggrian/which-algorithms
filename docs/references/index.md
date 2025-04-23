@@ -1,7 +1,7 @@
-!!! quote
-    &ldquo;From a programmer's point of view, the user is a peripheral that
-    types when you issue a read request.&rdquo;
-    &mdash; *Peter Williams*
+<img
+  width="640"
+  src="../images/references.jpg"
+  alt="Principal's office, now!">
 
 1.  [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
 

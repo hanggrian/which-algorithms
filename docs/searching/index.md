@@ -1,8 +1,9 @@
 # Searching
 
-!!! quote
-    &ldquo;Computers are useless. They can only give you answers.&rdquo;
-    &mdash; *Pablo Picasso*
+<img
+  width="640"
+  src="../images/searching.jpg"
+  alt="All these jobs are racist against people who don't have skills.">
 
 <div class="grid cards" markdown>
 -   **Linear search** [:material-information-variant:][linear-search]

@@ -1,8 +1,9 @@
 # Sorting
 
-!!! quote
-    &ldquo;There's more than one way to do it.&rdquo;
-    &mdash; *Lary Wall*
+<img
+  width="640"
+  src="../images/sorting.webp"
+  alt="Can you like, shut up?">
 
 <div class="grid cards" markdown>
 -   **Selection sort** [:material-information-variant:][selection-sort]

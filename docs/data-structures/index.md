@@ -1,9 +1,9 @@
 # Data structures
 
-!!! quote
-    &ldquo;**Bad programmers** worry about the code. **Good programmers** worry
-    about data structures and their relationships.&rdquo;
-    &mdash; *Linus Torvalds*
+<img
+  width="640"
+  src="../images/data_structures.jpg"
+  alt="By now your name and particulars have been fed into every laptop, desktop, mainframe and supermarket scanner that collectively make up the global information conspiracy, otherwise known as &quot;The Beast.&quot;">
 
 <div class="grid cards" markdown>
 -   **Lists**

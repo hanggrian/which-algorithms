@@ -69,7 +69,7 @@ nav:
     - Queues: data-structures/queues.md
     - Sets: data-structures/sets.md
     - Maps: data-structures/maps.md
-  - References: references.md
+  - References: references/index.md
 
 plugins:
   - search

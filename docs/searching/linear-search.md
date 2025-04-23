@@ -76,7 +76,7 @@ found.
     }
     ```
 
-![](../images/linear-search.gif)
+![](../images/searching/linear_search.gif)
 </div>
 
 ## Use cases

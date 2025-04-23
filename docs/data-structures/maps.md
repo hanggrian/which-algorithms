@@ -1,8 +1,7 @@
 !!! quote inline end
-    &ldquo;Data dominates. If you've chosen the right data structures and
-    organized things well, the algorithms will almost always be self-evident.
-    Data structures, not algorithms, are central to programming.&rdquo;
-    &mdash; *Rob Pike*
+    &ldquo;**Bad programmers** worry about the code. **Good programmers** worry
+    about data structures and their relationships.&rdquo;
+    &mdash; *Linus Torvalds*
 
 === "Java"
     Operation | HashMap [:material-information-variant:][hash-table] | LinkedHashMap [:material-information-variant:][hash-table] | IdentityHashMap [:material-information-variant:][array] | WeakHashMap [:material-information-variant:][hash-table] | EnumMap [:material-information-variant:][array] | TreeMap [:material-information-variant:][red-black-tree] | ConcurrentHashMap [:material-information-variant:][hash-table] | ConcurrentSkipListMap [:material-information-variant:][skip-list]
